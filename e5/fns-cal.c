@@ -1,23 +1,26 @@
 #include<stdio.h>
 #include<conio.h>
+int  addi( int a, int b)
+{ 	return a+b;}	
+int  sub( int a, int b)
+{	return a-b;}	
+int mul( int a, int b)
+{	return a*b;}	
+float qut( int a, int b)
+{	return a/(1.0*b);}	
+
 int main()
 {
-	 int addi(int  ,int );
-	 int  sub(int  ,int);
-     int mul(int  ,int);
-	 float qut(int ,int );
-	
 	int a,b;
 	float c;
 	char x;
 	printf("enter the two opreands");
 	scanf("%d %d",&a,&b);
-		printf("enter the operator");
+	printf("enter the operator");
 	scanf("%c",&x);
 	scanf("%c",&x);
 	switch(x)
-	{
-		case '+' : c=addi(a,b); 
+	{   case '+' : c=addi(a,b); 
 		           printf("sum=%g",c);
 		           break;
 	    case '-' : c=sub(a,b); 
@@ -34,23 +37,3 @@ int main()
 	  }
 	 getch();
 }
-int  addi( int a, int b)
-{ 
-	return a+b;
-}	
-int  sub( int a, int b)
-{
-	return a-b;
-}	
-int mul( int a, int b)
-{
-	return a*b;
-}	
-float qut( int a, int b)
-{
-	return a/(1.0*b);
-}	
-
- 
-
-
