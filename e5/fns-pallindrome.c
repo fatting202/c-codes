@@ -15,19 +15,13 @@ int main()
 	 getch();
 }
 int pal( int a)
-{  
-	int x,r=0;
-     
-     x=a;
+{    int x,r=0;
+      x=a;
      for( ;a>0; )
-     {  
-		  r=r*10+a%10;
-		
-		 a/=10;
+     {    r=r*10+a%10;
+	  a/=10;
 	 }
-	 if(x==r)
-	  return 1;
-	 else
-	   return 0;
+       if(x==r)  return 1;
+     return 0;
 }	
 
