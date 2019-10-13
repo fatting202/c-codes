@@ -20,8 +20,7 @@ int main()
 	scanf("%c",&x);
 	scanf("%c",&x);
 	switch(x)
-	{
-		case '+' : c=addi(a,b); 
+	{   case '+' : c=addi(a,b); 
 		           printf("sum=%g",c);
 		           break;
 	    case '-' : c=sub(a,b); 
